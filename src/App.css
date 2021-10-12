@@ -1,0 +1,45 @@
+.App {
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--main-bg-color);
+}
+
+main,
+.map {
+  flex: 0 0 100%;
+}
+.map {
+  height: 100vh;
+  position: relative;
+}
+
+.contents {
+  padding: 24px 0;
+}
+
+.flats-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .App {
+    padding: 0;
+  }
+
+  main {
+    flex: 0 0 70%;
+  }
+
+  .map {
+    flex: 0 0 30%;
+  }
+
+  .contents {
+    padding: 24px;
+  }
+}
