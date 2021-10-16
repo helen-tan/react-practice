@@ -1,11 +1,19 @@
+import { useEffect, useState } from "react";
 import './App.css';
 import Flat from "./components/Flat";
-
-import Hello from "./components/Hello";
 
 const FLATS =[1];
 
 function App() {
+const [flats, setFlats] = useState([]);
+
+useEffect(() => {
+  fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
+  .then((res) => res.json())
+  .then((data) => setFlats(data));
+}, []);
+
+
   return (
     <div className="App">
         <main>
