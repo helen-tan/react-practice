@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Flat from "./components/Flat";
 
 import Hello from "./components/Hello";
 
-const FLATS =[1,1,1,1,1];
+const FLATS =[1];
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
             <div>search</div>
             <div className="flat-wrapper">
               {FLATS.map(flat => {
-                return <Flat />
+                return <Flat key={flat.id} flat={flat}/>
               })}
             </div>
           </div>
