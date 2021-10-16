@@ -1,3 +1,7 @@
+# Rental Property Locator
+This is a simple web app made to locate rental properties on a map, similar to airbnb.\
+This project is still ongoing.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
