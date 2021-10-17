@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import './App.css';
 import Flat from "./components/Flat";
 import Search from "./components/Search";
+import Map from "./components/Map";
 
 const FLATS =[1];
 
@@ -26,7 +27,7 @@ useEffect(() => {
               })}
             </div>
           </div>
-          <div className="map">map</div>
+          <div className="map"><Map/></div>
         </main>
     </div>
   );
