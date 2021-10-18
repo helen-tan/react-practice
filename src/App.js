@@ -7,12 +7,23 @@ import Map from "./components/Map";
 const FLATS =[1];
 
 function App() {
-const [flats, setFlats] = useState([]);
-
+  const [allFlats, setAllFlats] = useState([]);
+  const [flats, setFlats] = useState([]);
+/*
 useEffect(() => {
   fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
   .then((res) => res.json())
   .then((data) => setFlats(data));
+}, []);
+*/
+
+useEffect(() => {
+  fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
+    .then((res) => res.json())
+    .then((flats) => {
+      setAllFlats(flats);
+      setFlats(flats);
+    });
 }, []);
 
 
@@ -27,7 +38,9 @@ useEffect(() => {
               })}
             </div>
           </div>
-          <div className="map"><Map/></div>
+          <div className="map">
+            <Map flats={flats}/>
+          </div>
         </main>
     </div>
   );

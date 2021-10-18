@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker } from "react-map-gl";
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
 
@@ -8,7 +9,7 @@ const PARIS = {
     lng: 2.3522,
 }
 
-const Map = (props) => {
+const Map = ({ flats }) => {
     const accessToken = 
     "pk.eyJ1IjoiaGVsZW4tdGFuLW16IiwiYSI6ImNrdXYya2ludjA2N2kycHJmM2RxdTYwMmUifQ.JoDUdQbqD62h-AN4hIAwQw";
 
@@ -26,7 +27,15 @@ const Map = (props) => {
             width="100%"
             height="100%"
             onViewportChange={(viewport) => setViewport(viewport)}
-        />
+        >
+            {flats.map((flat) => {
+                return(
+                    <Marker key={flat.id} latitude={flat.lat} longitude={flat.lng}>
+                        <FaMapMarkerAlt color="tomato" size="1.5em"/>
+                    </Marker>
+                );
+            })}
+        </ReactMapGL>
     );
 };
 
