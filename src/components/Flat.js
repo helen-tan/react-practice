@@ -3,8 +3,19 @@ import React from 'react';
 import "./Flat.css";
 
 //define
-const Flat = () => {
+const Flat = ({ flat, selectedFlat, setSelectedFlat }) => {
+    const isSelected = selectedFlat ? selectedFlat.id === flat.id : false;
+  
     return (
+      <div className={`flat ${isSelected ? "selected" : ""}`} key={flat.id} onClick={() => setSelectedFlat(flat)}>
+        <div className="flat-image">
+          <img src={flat.imageUrl} alt="" />
+        </div>
+        <div className="flat-name">{flat.name}</div>
+      </div>
+    );
+  };
+        /*
         <>
             <div className="flat ">
                 <div className="flat-image">
@@ -43,8 +54,8 @@ const Flat = () => {
                 <div className="flat-name">Bohemian and Chic in Paris</div>
             </div>
         </>
-    )
-};
+        */
+
 
 //export
 export default Flat;

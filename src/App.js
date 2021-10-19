@@ -15,8 +15,8 @@ function App() {
     fetch("https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/flats.json")
       .then((res) => res.json())
       .then((flats) => {
-        setAllFlats(flats);
         setFlats(flats);
+        setAllFlats(flats);
       });
   }, []);
 
@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <main>
         <div className="contents">
-          <div><Search /></div>
+          <div><Search setFlats={setFlats} allFlats={allFlats}/></div>
 
           <div className="flats-wrapper">
             {flats.length
