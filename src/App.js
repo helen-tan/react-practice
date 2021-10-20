@@ -3,6 +3,7 @@ import './App.css';
 import Flat from "./components/Flat";
 import Search from "./components/Search";
 import Map from "./components/Map";
+import Header from "./components/Header";
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div>
+      <Header/>
+      <div className="App">
       <main>
         <div className="contents">
           <div><Search setFlats={setFlats} allFlats={allFlats}/></div>
@@ -39,6 +42,9 @@ function App() {
         <Map flats={flats} selectedFlat={selectedFlat} setSelectedFlat={setSelectedFlat} />
       </div>
     </div>
+
+    </div>
+    
   );
 }
 
