@@ -1,5 +1,6 @@
 .header{
     background-color: var(--primary-red);
     color: #fff;
-    padding: 5vh;
+    padding: 3vh;
+    margin: 0;
 }
