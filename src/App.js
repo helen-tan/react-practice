@@ -4,6 +4,7 @@ import Flat from "./components/Flat";
 import Search from "./components/Search";
 import Map from "./components/Map";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -42,6 +43,8 @@ function App() {
         <Map flats={flats} selectedFlat={selectedFlat} setSelectedFlat={setSelectedFlat} />
       </div>
     </div>
+
+    <Footer/>
 
     </div>
     

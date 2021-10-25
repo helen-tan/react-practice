@@ -1,0 +1,45 @@
+.footer{
+    background-color: #8f2513;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.footer h5{
+    color: white;
+}
+
+.footer-message{
+    color: white;
+    margin: 50px;
+}
+
+a.social {
+    margin: 50px 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  
+  a.facebook {
+    color: white;
+  }
+  
+  a.twitter {
+    color: white;
+  }
+
+  a.linkedin {
+      color: white;
+  }
+  
+  a.instagram {
+    color: white;
+  }
+
+  a.medium,
+  a.github {
+    color: white;
+  }
