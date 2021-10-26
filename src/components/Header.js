@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Nav className="header">
             <div className="logo">
-                <div><img src="logo.png" alt="logo"/> FindProperty</div>
+                <img src="logo-white-resized.png" alt="logo"/>
             </div>
         </Nav>
     );

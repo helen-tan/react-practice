@@ -1,11 +1,10 @@
 .header{
     background-color: var(--primary-red);
-    color: #fff;
-    padding: 3vh;
+    padding: 0;
     margin: 0;
 }
 .logo img{
-    height: 30px;
+    height: 80px;
 }
 
 .logo{
