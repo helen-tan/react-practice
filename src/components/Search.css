@@ -4,13 +4,13 @@
   
   input {
     width: 100%;
-    border: 1px solid var(--primary-red);
+    border: 1px solid var(--primary-purple);
     border-radius: 8px;
     padding: 8px;
     transition: 200ms;
   }
   
   input:focus {
-    border: 1px solid var(--primary-blue);
+    border: 1px solid var(--primary-purple);
     outline: none;
   }

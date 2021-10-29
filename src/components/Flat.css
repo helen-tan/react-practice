@@ -1,16 +1,15 @@
 .flat {
-    border: 1px solid var(--primary-red);
+    border: 1px solid var(--primary-purple);
     border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     transition: 300ms;
-    background-color: var(--primary-red);
-    color: #fff;
+    background-color: white;
+    color: #343a40;
   }
   
   .flat.selected {
-    background-color: var(--secondary-red);
-    border-color: var(--secondary-red);
+    border: 3px solid  var(--primary-purple);
   }
   
   .flat-name {
