@@ -41,7 +41,7 @@ const Map = ({ flats, selectedFlat, setSelectedFlat }) => {
         <ReactMapGL
             {...viewport}
             mapboxApiAccessToken={accessToken}
-            mapStyle="mapbox://styles/mapbox/streets-v10"
+            mapStyle="mapbox://styles/mapbox/streets-v11"
             width="100%"
             height="100%"
             onViewportChange={(viewport) => setViewport(viewport)}
@@ -49,7 +49,7 @@ const Map = ({ flats, selectedFlat, setSelectedFlat }) => {
             {flats.map((flat) => {
                 return(
                     <Marker key={flat.id} latitude={flat.lat} longitude={flat.lng} onClick={() => setSelectedFlat(flat)}>
-                        <FaMapMarkerAlt color="tomato" size="1.5em"/>
+                        <FaMapMarkerAlt color="var(--primary-purple)" size="1.5em"/>
                     </Marker>
                 );
             })}
