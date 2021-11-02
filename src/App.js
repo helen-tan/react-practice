@@ -5,6 +5,7 @@ import Search from "./components/Search";
 import Map from "./components/Map";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Announcement from "./components/Announcement";
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
   return (
     <div>
       <Header/>
+
+      <Announcement/>
+
       <div className="App">
       <main>
         <div className="contents">
