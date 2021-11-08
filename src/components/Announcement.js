@@ -6,13 +6,13 @@ const Announcement = () => {
     return (
         <div className="announcement-wrapper">
             <div className="announcement-card col-sm-8 offset-sm-2">
-                
-                    <p>Thank you for visiting this page</p>
+                <div className="announcement-content">
+                    <p className="announcement-header">Thank you for visiting this page</p>
                     <p>Do check out the GitHub repo for this project to
                         find out more about the source code for this project.
                         You may find the link to the repo by clicking on the
-                        GitHub icon on the right.</p>
-                
+                        GitHub icon at the bottom of this page.</p>
+                </div>
 
                 {/*
                 <Card className="col-sm-8 offset-sm-2" bg="Dark">
@@ -23,7 +23,7 @@ const Announcement = () => {
                         GitHub icon on the right.</CardText>
                 </Card>
                 */}
-                
+
 
             </div>
         </div>
