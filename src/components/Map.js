@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import ReactMapGL, { Marker, Popup, NavigationControl, FullscreenControl } from "react-map-gl";
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css';
@@ -8,6 +8,16 @@ const PARIS = {
     lat: 48.8566,
     lng: 2.3522,
 }
+
+const navControlStyle= {
+    right: 10,
+    top: 10
+  };
+
+  const fullscreenControlStyle= {
+    right: 10,
+    top: 100
+  };
 
 const Map = ({ flats, selectedFlat, setSelectedFlat }) => {
     const accessToken = 
@@ -71,6 +81,10 @@ const Map = ({ flats, selectedFlat, setSelectedFlat }) => {
                     </div>
                 </Popup>
             )};
+
+        <NavigationControl style={navControlStyle} />
+
+        <FullscreenControl style={fullscreenControlStyle} />
             
         </ReactMapGL>
     );
