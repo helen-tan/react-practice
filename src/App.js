@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import './App.css';
-import Flat from "./components/Flat";
-import Search from "./components/Search";
-import Map from "./components/Map";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Announcement from "./components/Announcement";
+import Flat from "./components/Flat/Flat";
+import Search from "./components/Search/Search";
+import Map from "./components/Map/Map";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Announcement from "./components/Announcement/Announcement";
 
 
 function App() {
