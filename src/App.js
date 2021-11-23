@@ -25,14 +25,14 @@ function App() {
 
 
   return (
-    <div>
+    <div className="App">
       <Header/>
 
       <Announcement/>
 
-      <div className="App">
+      <div className="contents">
       <main>
-        <div className="contents">
+        <div className="flats-section">
           <div><Search setFlats={setFlats} allFlats={allFlats}/></div>
 
           <div className="flats-wrapper">

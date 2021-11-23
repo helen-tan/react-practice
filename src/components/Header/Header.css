@@ -2,11 +2,35 @@
     background-color: white;
     padding: 0;
     margin: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "logo nav";
 }
-.logo img{
+.logo{
     height: 80px;
+    margin: auto 50px;
+    grid-area: logo;
+ 
 }
 
-.logo{
-    margin: auto 50px;
+.Nav {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+  }
+
+.Nav a{
+    color: #808080;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-decoration: none;
 }
+
+.Nav a:hover {
+    transform: scale(1.1);
+    color: black;
+  }

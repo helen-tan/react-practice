@@ -1,4 +1,4 @@
-.App {
+.contents {
   width: 100%;
   padding: 0 24px;
   margin: 0 auto;
@@ -16,7 +16,7 @@ main,
   position: relative;
 }
 
-.contents {
+.flats-section {
   padding: 24px 0;
 }
 
@@ -39,7 +39,7 @@ main,
     flex: 0 0 30%;
   }
 
-  .contents {
+  .flats-section {
     padding: 24px;
   }
 }
