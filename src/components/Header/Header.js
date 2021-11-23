@@ -14,6 +14,7 @@ const Header = () => {
                 <a href="#viewhomes">View homes</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <button><img src="hamburger-icon.png"/></button>
         </header>
     );
 };
