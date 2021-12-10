@@ -20,6 +20,8 @@ const navControlStyle= {
   };
 
 const Map = ({ flats, selectedFlat, setSelectedFlat }) => {
+    console.log(flats);
+
     const accessToken = 
     "pk.eyJ1IjoiaGVsZW4tdGFuLW16IiwiYSI6ImNrdXYya2ludjA2N2kycHJmM2RxdTYwMmUifQ.JoDUdQbqD62h-AN4hIAwQw";
 

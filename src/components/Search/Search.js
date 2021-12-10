@@ -15,7 +15,7 @@ const Search = ({ allFlats, setFlats }) => {
                 const flatName = flat.name.toLowerCase();
                 return flatName.includes(value.toLowerCase);
             });
-    
+            
             setFlats(results);
         } else {
             setFlats(allFlats);
