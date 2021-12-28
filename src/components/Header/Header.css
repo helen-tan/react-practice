@@ -10,18 +10,17 @@
     height: 80px;
     margin: auto 50px;
     grid-area: logo;
- 
 }
 
-.Nav {
-    display: grid;
+.nav-items{
     grid-area: nav;
+    display: grid;
     grid-template-columns: repeat(4, auto);
     align-items: center;
     justify-items: center;
   }
 
-.Nav a{
+.nav-items a{
     color: #808080;
     font-size: 15px;
     font-weight: 500;
@@ -30,35 +29,41 @@
     text-decoration: none;
 }
 
-.Nav a:hover {
+.nav-items a:hover {
     transform: scale(1.1);
     color: black;
   }
 
-button {
-   display: none;
-   grid-area: burger;
-   margin: 0 20px 0 0;
-   padding: 0;
-   justify-self: end;
-   font-size: 40px;
-   border: none;
-   background: none;
-   outline: none;
-   transition: 0.1s;
+.nav-list {
+  display: none;
 }
-button:active {
-   transform: scale(1.2);
+
+.hamburger {
+  display: none;
 }
 
 @media (max-width: 700px) {
-    .button {
-        display: inline;
+  .header {
+    grid-template-areas: "logo hamburger" "nav-list nav-list";
+  }
+
+  .nav-items {
+    display: none;
+  }
+  
+  .hamburger {
+      display: flex;
+      grid-area: hamburger;
+      margin: auto;
+      padding: 0;
+      font-size: 18px;
+      border: none;
+      background: none;
+      outline: none;
     }
-    .header {
-      grid-template-areas: "logo burger" "nav nav";
-    }
-    .Nav {
+   
+    #nav-list {
+      grid-area: nav-list;
       grid-template-rows: repeat(4, auto);
       grid-template-columns: none;
       grid-row-gap: 20px;
@@ -70,5 +75,18 @@ button:active {
       border-bottom-right-radius: 10px;
     }
     
+    #nav-list a{
+      color: #808080;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      text-decoration: none;
+      list-style: none;
+   }
+
+   #nav-list ul{
+    list-style: none;
+   }
   }
   /*https://medium.com/@sidbentifraouine/responsive-animated-top-navigation-bar-with-react-transition-group-fd0ccbfb4bbb*/
